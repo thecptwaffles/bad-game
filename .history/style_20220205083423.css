@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#game {
+    width: 1200px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+#Steve {
+    width: 25px;
+    height: 25px;
+    background-color: magenta;
+    position: relative;
+    top: 550px;
+}
+
+.animate {
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+    0%{
+        top: 550px;
+    }
+
+    30% {
+        top: 480px; 
+    }
+
+    70% {
+        top: 480px;
+    }
+
+    100% {
+        top: 550px;
+    }
+}
+
+#block {
+    width: 20px;
+    height: 20px;
+    background-color: aquamarine;
+    position: relative;
+    top: 530px;
+    left: 480px;
+    animation: block 2s infinite linear;
+}
+
+@keyframes block {
+    0%{
+        left: 1200px;
+    }
+
+    100%{
+        left: -40px;
+    }
+}
+
+#center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
